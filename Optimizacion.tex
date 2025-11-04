@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\geometry{margin=1in}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\title{\textbf{Tarea evaluativa de Optimización}\\[2mm]
+\large C312}
+\author{Rachel Mojena González}
+
+\begin{document}
+\maketitle
+
+\section{Formulación del modelo}
+Se considera la función objetivo
+\begin{equation}\label{eq:obj}
+f(x,y)=\cos x\,\sin y-\frac{x}{y^2+1},\qquad (x,y)\in\mathbb{R}^2,
+\end{equation}
+la cual es $C^\infty$ en todo el plano. Dado que $f(x,0)=-x\to -\infty$ cuando $x\to +\infty$, el problema irrestricto no está acotado inferiormente y carece de mínimo global. Para efectos de análisis y verificación con KKT, se trabaja la versión acotada
+\begin{equation*}
+\mathcal{B}=[-100,100]^2=\{(x,y): -100\le x\le 100,\ -100\le y\le 100\}.
+\end{equation*}
+En forma estándar, las restricciones se escriben como
+\begin{equation}\label{eq:res}
+\begin{aligned}
+g_1(x,y)&=x-100\le 0, &
+g_2(x,y)&=-x-100\le 0,\\
+g_3(x,y)&=y-100\le 0, &
+g_4(x,y)&=-y-100\le 0.
+\end{aligned}
+\end{equation}
+
+\section{Diagnóstico teórico}
+\subsection{Gradiente y hessiana}
+Las derivadas parciales de primer orden son
+\begin{equation}\label{eq:grad}
+\begin{aligned}
+f_x(x,y) &= -\sin x\,\sin y-\frac{1}{y^2+1},\\
+f_y(x,y) &= \cos x\,\cos y+\frac{2xy}{(y^2+1)^2}.
+\end{aligned}
+\end{equation}
+La matriz hessiana resulta
+\begin{equation}\label{eq:hess}
+\nabla^2 f(x,y)=
+\begin{bmatrix}
+-\cos x\,\sin y & -\sin x\,\cos y+\dfrac{2y}{(y^2+1)^2}\\[6pt]
+-\sin x\,\cos y+\dfrac{2y}{(y^2+1)^2} & -\cos x\,\sin y+\dfrac{2x(1-3y^2)}{(y^2+1)^3}
+\end{bmatrix}.
+\end{equation}
+
+\subsection{No convexidad}
+Para que $f$ fuera convexa en $\mathbb{R}^2$ sería necesario que su hessiana fuese semidefinida positiva (SDP) para todo $(x,y)$.
+
+Evalúese en el punto $(x_0,y_0)=\big(0,\tfrac{\pi}{2}\big)$, donde $\sin y_0=1$ y $\cos y_0=0$:
+\begin{equation*}
+\nabla^2 f\big(0,\tfrac{\pi}{2}\big)=
+\begin{bmatrix}
+-1 & \dfrac{2(\tfrac{\pi}{2})}{\big((\tfrac{\pi}{2})^2+1\big)^2}\\[8pt]
+\dfrac{2(\tfrac{\pi}{2})}{\big((\tfrac{\pi}{2})^2+1\big)^2} & -1
+\end{bmatrix}
+=
+\begin{bmatrix}
+-1 & \alpha\\ \alpha & -1
+\end{bmatrix},
+\qquad
+\alpha=\frac{\pi}{\left((\tfrac{\pi}{2})^2+1\right)^2}\approx 0.261.
+\end{equation*}
+Para matrices simétricas $2\times 2$, la condición SDP es equivalente a $a\ge 0$ y $\det\ge 0$ para $H=\begin{bmatrix}a&b\\b&c\end{bmatrix}$. Aquí $a=-1<0$, luego $H$ no es SDP. De hecho, $\det(H)=(-1)^2-\alpha^2>0$ y ambos autovalores son negativos ($-1\pm\alpha$), con lo cual la hessiana es definida negativa en ese punto. Por consiguiente, $f$ no es convexa.
+
+\subsection{Puntos críticos del problema irrestricto}
+Los puntos críticos interiores satisfacen $\nabla f=0$, esto es
+\begin{equation}\label{eq:crit}
+\boxed{\sin x\,\sin y=-\frac{1}{y^2+1}},\qquad
+\boxed{\cos x\,\cos y=-\frac{2xy}{(y^2+1)^2}}.
+\end{equation}
+Debido a la periodicidad de las funciones trigonométricas, existen infinitos candidatos en $\mathbb{R}^2$ y, en particular, dentro de $\mathcal{B}$.
+
+\section{Condiciones KKT en \texorpdfstring{$\mathcal{B}$}{[-100,100]^2}}
+Sea
+\begin{equation*}
+\mathcal{L}(x,y,\lambda)=f(x,y)+\sum_{i=1}^4 \lambda_i g_i(x,y),\qquad \lambda_i\ge 0.
+\end{equation*}
+Las KKT necesarias bajo LICQ, que se satisface pues los gradientes activos son afines e independientes.
+
+El análisis se realiza por \emph{conjuntos activos} $I(x,y)=\{i:\ g_i(x,y)=0\}$.
+
+\subsection*{Interior $I=\varnothing$}
+Del problema irrestricto se obtiene $\lambda_i=0$ y $f_x=0$, $f_y=0$. Se listan numéricamente algunos candidatos interiores dentro de $\mathcal{B}$, por ejemplo
+$(x,y)\approx (0.7946,-0.8935)$ con $f\approx -0.9878$ y
+$(x,y)\approx (4.4881,-3.2314)$ con $f\approx -0.4122$.
+
+\subsection*{Borde derecho $I=\{1\}$ ( $x=100$ )}
+Las ecuaciones KKT quedan
+\begin{equation*}
+\cos(100)\cos y+\frac{200\,y}{(y^2+1)^2}=0,\qquad
+\lambda_1=-f_x(100,y)=\sin(100)\sin y+\frac{1}{y^2+1}\ \ (\ge 0).
+\end{equation*}
+Entre las soluciones en $[-100,100]$, el valor
+\begin{equation*}
+y\*\approx -0.0043117
+\end{equation*}
+satisface $\lambda_1\approx 1.0022\ge 0$ y produce
+\begin{equation*}
+f(100,y\*)\approx -100.001859.
+\end{equation*}
+
+\subsection*{Borde izquierdo $I=\{2\}$ ( $x=-100$ )}
+Se obtiene
+\begin{equation*}
+\cos(100)\cos y-\frac{200\,y}{(y^2+1)^2}=0,\qquad
+\lambda_2=f_x(-100,y)=\sin(100)\sin y-\frac{1}{y^2+1}\ \ (\ge 0).
+\end{equation*}
+Los candidatos resultantes presentan valores significativamente superiores (en valor absoluto menores) al del caso $x=100$; por ejemplo $f(-100,-39.2737)\approx -0.7975$.
+
+\subsection*{Borde superior $I=\{3\}$ ( $y=100$ )}
+Las KKT imponen
+\begin{equation*}
+-\sin x\,\sin(100)-\frac{1}{100^2+1}=0,\qquad
+\lambda_3=-f_y(x,100)\ \ (\ge 0).
+\end{equation*}
+Entre las soluciones factibles en $[-100,100]$, el mejor valor observado es $f(x,100)\approx 0.4966$ en $x\approx 97.3892$.
+
+\subsection*{Borde inferior $I=\{4\}$ ( $y=-100$ )}
+Análogamente,
+\begin{equation*}
+-\sin x\,\sin(-100)-\frac{1}{100^2+1}=0,\qquad
+\lambda_4=f_y(x,-100)\ \ (\ge 0),
+\end{equation*}
+con mejores valores alrededor de $0.497$, lejos del caso $x=100$.
+
+\subsection*{Esquinas $I=\{1,3\},\{1,4\},\{2,3\},\{2,4\}$}
+En las cuatro combinaciones, algún multiplicador resulta negativo, por lo que no satisfacen KKT; además, sus valores de $f$ no son competitivos.
+
+\paragraph{Conclusión en  $\mathcal{B}$.}
+Por comparación de los candidatos KKT dentro de $\mathcal{B}$ se obtiene
+\begin{equation*}
+(x,y)=\big(100,\,y\big),\qquad y\approx -0.0043117,\qquad \lambda_1\approx 1.0022,\quad \lambda_{2,3,4}=0,
+\end{equation*}
+con valor
+\(
+f(x\*,y\*)\approx -100.001859.
+\)
+Dado que el dominio es compacto y $f$ es continua, este punto corresponde al mínimo global del problema acotado.
+
+\section*{Anexo: Algoritmos}
+En el archivo jupyter notebook se plasman los algoritmos utilizados: máximo descenso y Newton.
+\end{document}
