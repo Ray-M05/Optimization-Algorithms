@@ -1,0 +1,378 @@
+{
+  "results": [
+    {
+      "start": [
+        -50,
+        -50
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.0048110416718494,
+      "winner": "Newton",
+      "steps_gd": 13,
+      "steps_nt": 13
+    },
+    {
+      "start": [
+        -50,
+        -50
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.004811459464049,
+      "winner": "Newton",
+      "steps_gd": 4,
+      "steps_nt": 7
+    },
+    {
+      "start": [
+        -50,
+        0
+      ],
+      "alpha0": 0.5,
+      "f_best": -99.99755208098922,
+      "winner": "Newton",
+      "steps_gd": 19,
+      "steps_nt": 5
+    },
+    {
+      "start": [
+        -50,
+        0
+      ],
+      "alpha0": 1.0,
+      "f_best": -100.00185900763339,
+      "winner": "Newton",
+      "steps_gd": 5,
+      "steps_nt": 34
+    },
+    {
+      "start": [
+        -50,
+        50
+      ],
+      "alpha0": 0.5,
+      "f_best": -0.9788106867715087,
+      "winner": "GD",
+      "steps_gd": 12,
+      "steps_nt": 12
+    },
+    {
+      "start": [
+        -50,
+        50
+      ],
+      "alpha0": 1.0,
+      "f_best": -0.9788108263485837,
+      "winner": "GD",
+      "steps_gd": 3,
+      "steps_nt": 5
+    },
+    {
+      "start": [
+        0,
+        -50
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.0000000690777435,
+      "winner": "Newton",
+      "steps_gd": 17,
+      "steps_nt": 17
+    },
+    {
+      "start": [
+        0,
+        -50
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.0000000692008686,
+      "winner": "GD",
+      "steps_gd": 4,
+      "steps_nt": 4
+    },
+    {
+      "start": [
+        0,
+        0
+      ],
+      "alpha0": 0.5,
+      "f_best": -50.90676888288414,
+      "winner": "GD",
+      "steps_gd": 1000,
+      "steps_nt": 16
+    },
+    {
+      "start": [
+        0,
+        0
+      ],
+      "alpha0": 1.0,
+      "f_best": -50.99433244275904,
+      "winner": "GD",
+      "steps_gd": 1000,
+      "steps_nt": 4
+    },
+    {
+      "start": [
+        0,
+        50
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.000000087247425,
+      "winner": "Newton",
+      "steps_gd": 14,
+      "steps_nt": 14
+    },
+    {
+      "start": [
+        0,
+        50
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.000000088854104,
+      "winner": "Newton",
+      "steps_gd": 3,
+      "steps_nt": 4
+    },
+    {
+      "start": [
+        50,
+        -50
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.0187001069878978,
+      "winner": "GD",
+      "steps_gd": 13,
+      "steps_nt": 11
+    },
+    {
+      "start": [
+        50,
+        -50
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.0187002869789379,
+      "winner": "Newton",
+      "steps_gd": 4,
+      "steps_nt": 4
+    },
+    {
+      "start": [
+        50,
+        0
+      ],
+      "alpha0": 0.5,
+      "f_best": -100.0018590076334,
+      "winner": "Newton",
+      "steps_gd": 1000,
+      "steps_nt": 33
+    },
+    {
+      "start": [
+        50,
+        0
+      ],
+      "alpha0": 1.0,
+      "f_best": -99.9232590841711,
+      "winner": "Newton",
+      "steps_gd": 1000,
+      "steps_nt": 5
+    },
+    {
+      "start": [
+        50,
+        50
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.0211899684212327,
+      "winner": "GD",
+      "steps_gd": 12,
+      "steps_nt": 10
+    },
+    {
+      "start": [
+        50,
+        50
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.0211901081420973,
+      "winner": "GD",
+      "steps_gd": 3,
+      "steps_nt": 3
+    },
+    {
+      "start": [
+        90,
+        -10
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.7568583059646756,
+      "winner": "Newton",
+      "steps_gd": 15,
+      "steps_nt": 14
+    },
+    {
+      "start": [
+        90,
+        -10
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.7568583282264751,
+      "winner": "GD",
+      "steps_gd": 5,
+      "steps_nt": 3
+    },
+    {
+      "start": [
+        90,
+        0
+      ],
+      "alpha0": 0.5,
+      "f_best": -100.00185900763341,
+      "winner": "Newton",
+      "steps_gd": 844,
+      "steps_nt": 42
+    },
+    {
+      "start": [
+        90,
+        0
+      ],
+      "alpha0": 1.0,
+      "f_best": -100.00185900763337,
+      "winner": "Newton",
+      "steps_gd": 844,
+      "steps_nt": 24
+    },
+    {
+      "start": [
+        90,
+        10
+      ],
+      "alpha0": 0.5,
+      "f_best": -2.5328007660516283,
+      "winner": "GD",
+      "steps_gd": 27,
+      "steps_nt": 10
+    },
+    {
+      "start": [
+        90,
+        10
+      ],
+      "alpha0": 1.0,
+      "f_best": -2.532800771957142,
+      "winner": "GD",
+      "steps_gd": 12,
+      "steps_nt": 5
+    },
+    {
+      "start": [
+        100,
+        -20
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.1018767032081918,
+      "winner": "Newton",
+      "steps_gd": 9,
+      "steps_nt": 6
+    },
+    {
+      "start": [
+        100,
+        -20
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.1018767068474256,
+      "winner": "Newton",
+      "steps_gd": 6,
+      "steps_nt": 9
+    },
+    {
+      "start": [
+        100,
+        -10
+      ],
+      "alpha0": 0.5,
+      "f_best": -2.5769821578214467,
+      "winner": "GD",
+      "steps_gd": 30,
+      "steps_nt": 10
+    },
+    {
+      "start": [
+        100,
+        -10
+      ],
+      "alpha0": 1.0,
+      "f_best": -2.5769821613535506,
+      "winner": "GD",
+      "steps_gd": 11,
+      "steps_nt": 8
+    },
+    {
+      "start": [
+        100,
+        0
+      ],
+      "alpha0": 0.5,
+      "f_best": -100.00185900763339,
+      "winner": "Newton",
+      "steps_gd": 25,
+      "steps_nt": 38
+    },
+    {
+      "start": [
+        100,
+        0
+      ],
+      "alpha0": 1.0,
+      "f_best": -100.00185900763339,
+      "winner": "Newton",
+      "steps_gd": 25,
+      "steps_nt": 38
+    },
+    {
+      "start": [
+        100,
+        10
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.696012994422336,
+      "winner": "GD",
+      "steps_gd": 12,
+      "steps_nt": 3
+    },
+    {
+      "start": [
+        100,
+        10
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.6960130202514867,
+      "winner": "Newton",
+      "steps_gd": 6,
+      "steps_nt": 3
+    },
+    {
+      "start": [
+        100,
+        20
+      ],
+      "alpha0": 0.5,
+      "f_best": -1.2332568783203608,
+      "winner": "GD",
+      "steps_gd": 20,
+      "steps_nt": 12
+    },
+    {
+      "start": [
+        100,
+        20
+      ],
+      "alpha0": 1.0,
+      "f_best": -1.2332569465905983,
+      "winner": "GD",
+      "steps_gd": 8,
+      "steps_nt": 5
+    }
+  ]
+}
