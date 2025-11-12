@@ -7,7 +7,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.0048110416718494,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 13,
       "steps_nt": 13
     },
@@ -18,7 +18,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.004811459464049,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 4,
       "steps_nt": 7
     },
@@ -29,7 +29,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -99.99755208098922,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 19,
       "steps_nt": 5
     },
@@ -40,7 +40,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -100.00185900763339,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 5,
       "steps_nt": 34
     },
@@ -51,7 +51,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -0.9788106867715087,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 12,
       "steps_nt": 12
     },
@@ -62,7 +62,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -0.9788108263485837,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 3,
       "steps_nt": 5
     },
@@ -73,7 +73,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.0000000690777435,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 17,
       "steps_nt": 17
     },
@@ -84,7 +84,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.0000000692008686,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 4,
       "steps_nt": 4
     },
@@ -95,7 +95,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -50.90676888288414,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 1000,
       "steps_nt": 16
     },
@@ -106,7 +106,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -50.99433244275904,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 1000,
       "steps_nt": 4
     },
@@ -117,7 +117,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.000000087247425,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 14,
       "steps_nt": 14
     },
@@ -128,7 +128,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.000000088854104,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 3,
       "steps_nt": 4
     },
@@ -139,7 +139,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.0187001069878978,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 13,
       "steps_nt": 11
     },
@@ -150,7 +150,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.0187002869789379,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 4,
       "steps_nt": 4
     },
@@ -161,7 +161,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -100.0018590076334,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 1000,
       "steps_nt": 33
     },
@@ -172,7 +172,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -99.9232590841711,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 1000,
       "steps_nt": 5
     },
@@ -183,7 +183,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.0211899684212327,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 12,
       "steps_nt": 10
     },
@@ -194,7 +194,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.0211901081420973,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 3,
       "steps_nt": 3
     },
@@ -205,7 +205,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.7568583059646756,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 15,
       "steps_nt": 14
     },
@@ -216,7 +216,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.7568583282264751,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 5,
       "steps_nt": 3
     },
@@ -227,7 +227,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -100.00185900763341,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 844,
       "steps_nt": 42
     },
@@ -238,7 +238,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -100.00185900763337,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 844,
       "steps_nt": 24
     },
@@ -249,7 +249,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -2.5328007660516283,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 27,
       "steps_nt": 10
     },
@@ -260,7 +260,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -2.532800771957142,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 12,
       "steps_nt": 5
     },
@@ -271,7 +271,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.1018767032081918,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 9,
       "steps_nt": 6
     },
@@ -282,7 +282,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.1018767068474256,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 6,
       "steps_nt": 9
     },
@@ -293,7 +293,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -2.5769821578214467,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 30,
       "steps_nt": 10
     },
@@ -304,7 +304,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -2.5769821613535506,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 11,
       "steps_nt": 8
     },
@@ -315,7 +315,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -100.00185900763339,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 25,
       "steps_nt": 38
     },
@@ -326,7 +326,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -100.00185900763339,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 25,
       "steps_nt": 38
     },
@@ -337,7 +337,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.696012994422336,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 12,
       "steps_nt": 3
     },
@@ -348,7 +348,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.6960130202514867,
-      "winner": "Newton",
+      "best": "Newton",
       "steps_gd": 6,
       "steps_nt": 3
     },
@@ -359,7 +359,7 @@
       ],
       "alpha0": 0.5,
       "f_best": -1.2332568783203608,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 20,
       "steps_nt": 12
     },
@@ -370,7 +370,7 @@
       ],
       "alpha0": 1.0,
       "f_best": -1.2332569465905983,
-      "winner": "GD",
+      "best": "GD",
       "steps_gd": 8,
       "steps_nt": 5
     }
